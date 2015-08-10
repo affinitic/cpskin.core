@@ -82,6 +82,14 @@ def installCore(context):
     addCityNameToRegistry()
 
 
+def installCoreLite(context):
+    if context.readDataFile('cpskin.core-lite.txt') is None:
+        return
+
+    logger.info('Installing')
+    addLoadPageMenuToRegistry()
+
+
 def configureMembers(context):
     if context.readDataFile('cpskin.core-membersconfig.txt') is None:
         return

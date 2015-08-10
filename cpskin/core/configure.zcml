@@ -10,9 +10,9 @@
     <include package="collective.quickupload" />
     <include package="wildcard.foldercontents" />
     <include package="collective.iconifieddocumentactions" />
-    <include package="cpskin.locales" />
     <include package="collective.z3cform.keywordwidget" />
 
+    <include file="meta.zcml" />
     <include file="permissions.zcml" />
     <include file="profiles.zcml" />
     <include file="monkey.zcml" />
